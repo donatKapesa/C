@@ -440,18 +440,3 @@ int bmp_collage(char* bmp_input1, char* bmp_input2, char* bmp_result,
 
 	return 0;
 }
-
-/*
- * Questions:
- *
- * 1. Why do we need to use malloc and not fread like he did on bootcamp github files
- * clarify how malloc works. Especially on double pointers like **img_data
- *
- * 2. When you do unsigned int* wp = (unsigned int*) (*img_data + 18); does the pointer go to img_data[0] and reads the next 4 bytes?
- *
- * 3. Why doesn't it work when I do copy pixel_data to file instead of img_data
- * Also how come change pixel data also changes new_image_data
- *
- * 4. What is line 151 doing? concatenating strings?
- *
- */
